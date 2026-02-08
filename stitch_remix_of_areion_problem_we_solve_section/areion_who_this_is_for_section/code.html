@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Areion - Who This Is For</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#A855F7", // Purple from the sparkle in the logo (approximate)
+              secondary: "#111827", // Dark gray/black for strong contrast text
+              "background-light": "#FFFFFF",
+              "background-dark": "#0F172A",
+              "surface-light": "#F9FAFB",
+              "surface-dark": "#1E293B",
+            },
+            fontFamily: {
+              display: ["'Playfair Display'", "serif"],
+              sans: ["'Inter'", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+            },
+          },
+        },
+      };
+    </script>
+<style>@keyframes sparkle-spin {
+            0% { transform: scale(1) rotate(0deg); opacity: 1; }
+            50% { transform: scale(1.2) rotate(180deg); opacity: 0.8; }
+            100% { transform: scale(1) rotate(360deg); opacity: 1; }
+        }
+        .sparkle-icon {
+            animation: sparkle-spin 6s infinite linear;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-secondary dark:text-gray-100 antialiased font-sans transition-colors duration-300">
+<nav class="w-full px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
+<div class="flex items-center gap-1 select-none">
+<span class="font-display text-3xl font-bold tracking-tight text-black dark:text-white">Areion</span>
+<span class="text-primary text-2xl relative -top-1">✦</span>
+</div>
+<div class="hidden md:flex gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
+<a class="hover:text-primary transition-colors" href="#">Services</a>
+<a class="hover:text-primary transition-colors" href="#">Case Studies</a>
+<a class="hover:text-primary transition-colors" href="#">About</a>
+</div>
+<button class="bg-black dark:bg-white text-white dark:text-black px-5 py-2 rounded-full text-sm font-medium hover:opacity-80 transition-opacity">
+            Book a Call
+        </button>
+</nav>
+<section class="relative py-20 lg:py-32 overflow-hidden">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<div class="max-w-3xl mx-auto text-center mb-16 lg:mb-24">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 mb-6">
+<span class="text-xs font-semibold uppercase tracking-wider text-primary">Target Audience</span>
+</div>
+<h2 class="font-display text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-6">
+                    We partner with ambitious <span class="italic text-primary">visionaries</span> ready to scale.
+                </h2>
+<p class="text-lg text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                    Areion isn’t for everyone. We specialize in high-growth environments where speed, precision, and strategic business development are critical for the next leap forward.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+<div class="group relative p-8 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-icons text-6xl text-primary">rocket_launch</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-light dark:bg-gray-800 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+<span class="material-icons text-primary">wb_sunny</span>
+</div>
+<h3 class="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Early-Stage Founders</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                        You have a validated MVP and initial traction, but need a structured GTM strategy to secure your Series A. We build the engine that drives your first major growth spurt.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-green-500 text-sm mt-0.5">check_circle</span>
+<span>Post-Seed / Pre-Series A</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-green-500 text-sm mt-0.5">check_circle</span>
+<span>Need repeatable sales processes</span>
+</li>
+</ul>
+</div>
+<div class="group relative p-8 bg-surface-light dark:bg-gray-800 rounded-xl border-2 border-primary/20 dark:border-primary/40 shadow-md hover:shadow-xl transition-all duration-300 transform scale-100 md:scale-105 z-10">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-xs font-bold tracking-wide shadow-lg">
+                        MOST COMMON PARTNER
+                    </div>
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-icons text-6xl text-primary">trending_up</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-white dark:bg-surface-dark flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors shadow-sm">
+<span class="material-icons text-primary sparkle-icon">auto_awesome</span>
+</div>
+<h3 class="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors">High-Growth Scale-Ups</h3>
+<p class="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+                        You're growing fast but operations are breaking. You need to professionalize your BD efforts, expand into new markets, and optimize your revenue operations without slowing down.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-primary text-sm mt-0.5">check_circle</span>
+<span>Series B to Series C</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-primary text-sm mt-0.5">check_circle</span>
+<span>Market expansion &amp; partnerships</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-primary text-sm mt-0.5">check_circle</span>
+<span>Revenue operations optimization</span>
+</li>
+</ul>
+</div>
+<div class="group relative p-8 bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-icons text-6xl text-primary">domain</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-light dark:bg-gray-800 flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+<span class="material-icons text-primary">psychology</span>
+</div>
+<h3 class="font-display text-2xl font-bold mb-3 group-hover:text-primary transition-colors">Innovation Units</h3>
+<p class="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                        Internal ventures within larger organizations that need to move with the agility of a startup. We help you bypass corporate inertia to launch and validate new products quickly.
+                    </p>
+<ul class="space-y-3">
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-green-500 text-sm mt-0.5">check_circle</span>
+<span>Corporate Venture / R&amp;D</span>
+</li>
+<li class="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-icons text-green-500 text-sm mt-0.5">check_circle</span>
+<span>New product validation</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-20 text-center">
+<div class="inline-flex flex-col items-center">
+<p class="text-gray-500 dark:text-gray-400 mb-6 italic font-display text-lg">"Areion helped us clarify our market fit in weeks, not months."</p>
+<a class="group relative inline-flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-full font-medium shadow-lg shadow-primary/30 hover:shadow-primary/50 transition-all hover:-translate-y-0.5" href="#">
+<span>See If We're a Match</span>
+<span class="material-icons text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="border-t border-gray-100 dark:border-gray-800 py-12 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-1">
+<span class="font-display text-xl font-bold">Areion</span>
+<span class="text-primary text-lg relative -top-0.5">✦</span>
+</div>
+<p class="text-sm text-gray-500">© 2023 Areion Agency. All rights reserved.</p>
+</div>
+</footer>
+
+</body></html>

@@ -1,0 +1,523 @@
+.page {
+  min-height: 100vh;
+  background: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logoText {
+  color: #111827;
+}
+
+.logoIcon {
+  color: #8b5cf6;
+  font-size: 1.25rem;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #111827;
+}
+
+.bookCall {
+  background: #111827;
+  color: white !important;
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 5rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f3e8ff;
+  color: #8b5cf6;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+}
+
+.heroSubtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Problems Grid */
+.problemsSection {
+  padding: 3rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.problemsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.problemCard {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.problemCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.iconCircle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconRed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.iconOrange {
+  background: #fed7aa;
+  color: #ea580c;
+}
+
+.iconBlue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.problemTitle {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.problemDescription {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.problemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.problemList li {
+  font-size: 0.875rem;
+  color: #6b7280;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.xIcon {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+/* Approach Section */
+.approachSection {
+  padding: 5rem 4rem;
+  background: linear-gradient(135deg, #f3e8ff 0%, #fae8ff 100%);
+}
+
+.approachContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.approachLeft {
+  max-width: 500px;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  color: #8b5cf6;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+.approachTitle {
+  font-size: 2.5rem;
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.approachDescription {
+  font-size: 1rem;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.featureTitle {
+  font-size: 1rem;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.featureDescription {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  background: #8b5cf6;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.3s;
+}
+
+.ctaButton:hover {
+  background: #7c3aed;
+}
+
+.approachRight {
+  position: relative;
+}
+
+.dashboardCard {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.browserBar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dotRed {
+  background: #ef4444;
+}
+
+.dotYellow {
+  background: #f59e0b;
+}
+
+.dotGreen {
+  background: #10b981;
+}
+
+.chartArea {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.bar {
+  flex: 1;
+  background: #e5e7eb;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: all 0.3s;
+}
+
+.bar1 { height: 40%; background: #e5e7eb; }
+.bar2 { height: 55%; background: #e5e7eb; }
+.bar3 { height: 75%; background: #c4b5fd; }
+.bar4 { height: 85%; background: #a78bfa; }
+.bar5 { height: 100%; background: #8b5cf6; }
+
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.statBox {
+  flex: 1;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.statValuePurple {
+  color: #8b5cf6;
+}
+
+.floatingCard {
+  position: absolute;
+  bottom: -1rem;
+  left: -2rem;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greenCircle {
+  width: 40px;
+  height: 40px;
+  background: #d1fae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #10b981;
+  font-size: 1.25rem;
+}
+
+.floatingLabel {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.floatingValue {
+  font-size: 0.875rem;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* CTA Bar */
+.ctaBar {
+  padding: 2rem 4rem;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+.ctaBarContent {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctaBarLeft h3 {
+  font-size: 1.25rem;
+  color: #111827;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.ctaBarLeft p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.ctaBarButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.secondaryBtn {
+  background: white;
+  color: #6b7280;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s;
+}
+
+.secondaryBtn:hover {
+  border-color: #8b5cf6;
+  color: #8b5cf6;
+}
+
+.primaryBtn {
+  background: #8b5cf6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.primaryBtn:hover {
+  background: #7c3aed;
+}
+
+@media (max-width: 1024px) {
+  .problemsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .approachContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .ctaBarContent {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  
+  .nav {
+    display: none;
+  }
+  
+  .heroSection,
+  .problemsSection,
+  .approachSection {
+    padding: 3rem 2rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .approachTitle {
+    font-size: 2rem;
+  }
+  
+  .ctaBar {
+    padding: 2rem;
+  }
+  
+  .ctaBarButtons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .floatingCard {
+    position: static;
+    margin-top: 1rem;
+  }
+}

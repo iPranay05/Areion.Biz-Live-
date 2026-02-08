@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Areion - Ready to Grow</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#A855F7", // Purple from the Areion star logo
+                        "background-light": "#FFFFFF",
+                        "background-dark": "#0B0F19", // Deep dark blue/gray
+                        "surface-light": "#F9FAFB",
+                        "surface-dark": "#111827",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        body: ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-body antialiased transition-colors duration-300">
+<header class="fixed top-0 w-full z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-1 select-none">
+<span class="font-display text-3xl font-bold tracking-tight text-black dark:text-white">Areion</span>
+<span class="text-primary text-2xl leading-none material-icons-round" style="transform: translateY(2px);">auto_awesome</span>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 dark:text-gray-300">
+<a class="hover:text-primary transition-colors" href="#">Services</a>
+<a class="hover:text-primary transition-colors" href="#">Expertise</a>
+<a class="hover:text-primary transition-colors" href="#">About Us</a>
+</nav>
+<div class="hidden md:block">
+<button class="text-sm font-semibold hover:text-primary dark:text-white dark:hover:text-primary transition-colors">
+                    Log in
+                </button>
+</div>
+<button class="md:hidden text-gray-600 dark:text-gray-300">
+<span class="material-icons-round">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col min-h-screen pt-20">
+<section class="relative flex-grow flex items-center justify-center py-24 px-6 overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-500/5 dark:bg-blue-500/10 rounded-full blur-[100px] -z-10 pointer-events-none"></div>
+<div class="max-w-5xl mx-auto w-full text-center relative z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-200 dark:border-gray-700 shadow-sm mb-10 animate-fade-in-up">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-semibold tracking-wider uppercase text-gray-500 dark:text-gray-400">Accepting new clients for 2024</span>
+</div>
+<h1 class="font-display text-5xl md:text-7xl lg:text-8xl font-medium leading-[1.1] mb-8 text-gray-900 dark:text-white">
+                    Ready to take your startup to the next 
+                    <span class="relative inline-block text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400 italic pr-2">
+                        heights?
+                        <svg class="absolute w-full h-3 bottom-2 left-0 text-primary opacity-30 dark:opacity-50" preserveAspectRatio="none" viewBox="0 0 100 10">
+<path d="M0 5 Q 50 12 100 5" fill="none" stroke="currentColor" stroke-width="3"></path>
+</svg>
+</span>
+</h1>
+<p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+                    Join Areion and accelerate your growth with our data-driven business development strategies. We turn potential into performance.
+                </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
+<a class="group relative inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white transition-all duration-200 bg-primary rounded-full hover:bg-purple-600 hover:shadow-lg hover:shadow-primary/30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" href="#">
+                        Start Your Growth Journey
+                        <span class="material-icons-round ml-2 group-hover:translate-x-1 transition-transform text-lg">arrow_forward</span>
+</a>
+<a class="group inline-flex items-center justify-center px-8 py-4 text-base font-medium text-gray-700 dark:text-gray-200 transition-all duration-200 bg-white dark:bg-surface-dark border border-gray-200 dark:border-gray-700 rounded-full hover:border-gray-300 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800" href="#">
+<span class="material-icons-round mr-2 text-gray-400 group-hover:text-primary transition-colors">play_circle</span>
+                        View Success Stories
+                    </a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-gray-100 dark:border-gray-800 pt-12">
+<div class="flex flex-col items-center">
+<span class="font-display text-3xl font-bold text-gray-900 dark:text-white">250+</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Startups Scaled</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display text-3xl font-bold text-gray-900 dark:text-white">$500M</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Capital Raised</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display text-3xl font-bold text-gray-900 dark:text-white">98%</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Client Retention</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="font-display text-3xl font-bold text-gray-900 dark:text-white">12</span>
+<span class="text-sm text-gray-500 dark:text-gray-400 mt-1">Global Offices</span>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-6 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-surface-dark">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
+<p>© 2024 Areion Agency. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Privacy</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Terms</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">Twitter</a>
+<a class="hover:text-gray-900 dark:hover:text-white transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</main>
+<script>
+        // Check local storage or system preference on load
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+
+</body></html>
