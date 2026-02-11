@@ -2,29 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 4rem;
+  padding: 1rem 4rem;
   background: white;
   border-bottom: 1px solid #f3f4f6;
+  position: relative;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #111827;
-  font-family: var(--font-display);
 }
 
-.logoText {
-  color: #111827;
-}
-
-.logoIcon {
-  color: #8b5cf6;
-  font-size: 1rem;
+.logoImage {
+  height: auto;
+  object-fit: contain;
 }
 
 .nav {
@@ -61,7 +53,7 @@
 }
 
 .bookCall {
-  background: #111827 !important;
+  background: #a855f7 !important;
   color: white !important;
   padding: 0.75rem 1.75rem;
   border-radius: 0.5rem;
@@ -72,12 +64,84 @@
   background: #000000 !important;
 }
 
+/* Mobile Menu Button */
+.mobileMenuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111827;
+  padding: 0.5rem;
+}
+
+/* Mobile Navigation */
+.mobileNav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-bottom: 1px solid #f3f4f6;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.mobileNavOpen {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+
+.mobileNav a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f3f4f6;
+  transition: color 0.3s;
+}
+
+.mobileNav a:hover {
+  color: #111827;
+}
+
+.mobileNav a:last-child {
+  border-bottom: none;
+}
+
+.mobileNav .bookCall {
+  background: #a855f7 !important;
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-bottom: none !important;
+}
+
 @media (max-width: 768px) {
   .header {
     padding: 1rem 2rem;
   }
 
+  .logo {
+    flex-shrink: 0;
+  }
+
+  .logoImage {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
   .nav {
     display: none;
+  }
+
+  .mobileMenuBtn {
+    display: block;
   }
 }

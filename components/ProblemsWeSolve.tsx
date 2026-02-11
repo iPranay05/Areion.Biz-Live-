@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './ProblemsWeSolve.module.css'
+import { AlertTriangle, TrendingDown, Brain, Target } from 'lucide-react'
 
 export default function ProblemsWeSolve() {
     return (
@@ -11,7 +12,7 @@ export default function ProblemsWeSolve() {
             {/* Hero Section */}
             <section className={styles.heroSection}>
                 <div className={styles.badge}>
-                    <span className={styles.badgeDot}>⚠️</span>
+                    <span className={styles.badgeDot}><AlertTriangle size={16} /></span>
                     The Startup Reality
                 </div>
                 <h1 className={styles.heroTitle}>
@@ -29,7 +30,7 @@ export default function ProblemsWeSolve() {
                     {/* Problem 1 */}
                     <div className={styles.problemCard}>
                         <div className={`${styles.iconBox} ${styles.iconRed}`}>
-                            <span className={styles.icon}>📉</span>
+                            <TrendingDown size={32} strokeWidth={2} />
                         </div>
                         <h3 className={styles.problemTitle}>Stagnant Revenue</h3>
                         <p className={styles.problemDescription}>
@@ -44,7 +45,7 @@ export default function ProblemsWeSolve() {
                     {/* Problem 2 */}
                     <div className={styles.problemCard}>
                         <div className={`${styles.iconBox} ${styles.iconOrange}`}>
-                            <span className={styles.icon}>🧠</span>
+                            <Brain size={32} strokeWidth={2} />
                         </div>
                         <h3 className={styles.problemTitle}>Founder Fatigue</h3>
                         <p className={styles.problemDescription}>
@@ -59,7 +60,7 @@ export default function ProblemsWeSolve() {
                     {/* Problem 3 */}
                     <div className={styles.problemCard}>
                         <div className={`${styles.iconBox} ${styles.iconBlue}`}>
-                            <span className={styles.icon}>🎯</span>
+                            <Target size={32} strokeWidth={2} />
                         </div>
                         <h3 className={styles.problemTitle}>No Market Fit</h3>
                         <p className={styles.problemDescription}>

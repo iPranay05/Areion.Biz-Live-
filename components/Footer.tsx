@@ -1,5 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Footer.module.css'
+
 
 export default function Footer() {
   return (
@@ -7,8 +9,13 @@ export default function Footer() {
       <div className={styles.footerContent}>
         <div className={styles.footerBrand}>
           <div className={styles.footerLogo}>
-            <span className={styles.logoText}>Areion</span>
-            <span className={styles.logoIcon}>✦</span>
+            <Image 
+              src="/areion.png" 
+              alt="Areion Logo" 
+              width={120} 
+              height={40}
+              className={styles.logoImage}
+            />
           </div>
           <p className={styles.footerDescription}>
             Areion is a premier business development agency helping startups scale through 
@@ -39,7 +46,7 @@ export default function Footer() {
 
       <div className={styles.footerBottom}>
         <div className={styles.footerCopyright}>
-          © 2023 Areion Agency. All rights reserved.
+          © {new Date().getFullYear()} Areion Agency. All rights reserved.
         </div>
         <div className={styles.footerBottomLinks}>
           <Link href="#">Privacy Policy</Link>

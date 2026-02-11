@@ -3,43 +3,44 @@ import Link from 'next/link'
 export default function StartupLaunchPack() {
   const packages = [
     {
-      name: 'Starter Pack',
-      price: '$2,999',
+      name: 'Startup Launch Pack',
+      price: ' ₹7,000',
       description: 'Perfect for early-stage startups',
       features: [
         'Landing Page',
-        'Logo Design',
-        'Basic SEO',
+        '4 Growth Calls',
         'Social Media Setup',
-        '1 Month Support'
+        '1 Month Content Calender'
       ]
     },
     {
-      name: 'Growth Pack',
-      price: '$7,999',
+      name: 'Social Media Pack',
+      price: ' ₹15,000',
       description: 'For startups ready to scale',
       features: [
-        'Full Website (5 pages)',
-        'Brand Identity Package',
-        'Advanced SEO',
-        'Marketing Strategy',
-        'Analytics Setup',
-        '3 Months Support'
+        'Content Calender',
+        'Video Edit',
+        'Post Content',
+        'Design Carousel',
+        'Analyze Trends',
+        'Copywriting',
+        'Profile Enhance',
+        'Monthly Reports'
       ],
       popular: true
     },
     {
-      name: 'Enterprise Pack',
-      price: '$15,999',
+      name: 'Growth & SEO',
+      price: '₹30,000',
       description: 'Complete solution for ambitious startups',
       features: [
-        'Custom Web Application',
-        'Mobile App (iOS/Android)',
-        'Complete Branding',
-        'Marketing Campaign',
-        'CRM Integration',
-        'Team Training',
-        '6 Months Support'
+        'WhatsApp Business Automation',
+        'Facebook Automation',
+        'Instagram Automation',
+        'Google My Business Automation',
+        'Landing Pages',
+        'Website Chatbot Integration',
+
       ]
     }
   ]

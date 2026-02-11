@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './LaunchPack.module.css'
+import { BarChart3, Target, Rocket, Handshake } from 'lucide-react'
 
 export default function LaunchPack() {
     return (
@@ -22,72 +23,73 @@ export default function LaunchPack() {
             {/* Pricing Tiers */}
             <section className={styles.pricingSection}>
                 <div className={styles.pricingGrid}>
-                    {/* Tier 1 - Starter */}
+                    {/* Tier 1 - Startup Launch Pack */}
                     <div className={styles.pricingCard}>
-                        <div className={styles.tierName}>Starter</div>
+                        <div className={styles.tierName}>Startup Launch Pack</div>
                         <div className={styles.tierPrice}>
-                            <span className={styles.currency}>$</span>
-                            <span className={styles.amount}>5,000</span>
+                            <span className={styles.currency}>₹</span>
+                            <span className={styles.amount}>7,000</span>
                             <span className={styles.period}>/month</span>
                         </div>
                         <p className={styles.tierDescription}>
-                            Perfect for pre-seed startups validating product-market fit.
+                            Perfect for early-stage startups
                         </p>
                         <ul className={styles.featuresList}>
-                            <li>✓ GTM Strategy Development</li>
-                            <li>✓ ICP Definition & Messaging</li>
-                            <li>✓ Sales Playbook Creation</li>
-                            <li>✓ Monthly Strategy Sessions</li>
-                            <li>✓ Email & Slack Support</li>
+                            <li>✓ Landing Page</li>
+                            <li>✓ 4 Growth Calls</li>
+                            <li>✓ Social Media Setup</li>
+                            <li>✓ 1 Month Content Calendar</li>
                         </ul>
                         <Link href="/ready-to-grow" className={styles.tierBtn}>
                             Get Started
                         </Link>
                     </div>
 
-                    {/* Tier 2 - Growth (Featured) */}
+                    {/* Tier 2 - Social Media Pack (Featured) */}
                     <div className={`${styles.pricingCard} ${styles.featuredCard}`}>
                         <div className={styles.featuredBadge}>MOST POPULAR</div>
-                        <div className={styles.tierName}>Growth</div>
+                        <div className={styles.tierName}>Social Media Pack</div>
                         <div className={styles.tierPrice}>
-                            <span className={styles.currency}>$</span>
-                            <span className={styles.amount}>12,000</span>
+                            <span className={styles.currency}>₹</span>
+                            <span className={styles.amount}>15,000</span>
                             <span className={styles.period}>/month</span>
                         </div>
                         <p className={styles.tierDescription}>
-                            For seed-stage startups ready to scale their revenue engine.
+                            For startups ready to scale
                         </p>
                         <ul className={styles.featuresList}>
-                            <li>✓ Everything in Starter</li>
-                            <li>✓ Outbound Campaign Execution</li>
-                            <li>✓ Sales Team Training</li>
-                            <li>✓ CRM Setup & Optimization</li>
-                            <li>✓ Weekly Performance Reviews</li>
-                            <li>✓ Dedicated Account Manager</li>
+                            <li>✓ Content Calendar</li>
+                            <li>✓ Video Edit</li>
+                            <li>✓ Post Content</li>
+                            <li>✓ Design Carousel</li>
+                            <li>✓ Analyze Trends</li>
+                            <li>✓ Copywriting</li>
+                            <li>✓ Profile Enhance</li>
+                            <li>✓ Monthly Reports</li>
                         </ul>
                         <Link href="/ready-to-grow" className={`${styles.tierBtn} ${styles.featuredBtn}`}>
                             Start Growing
                         </Link>
                     </div>
 
-                    {/* Tier 3 - Enterprise */}
+                    {/* Tier 3 - Growth & SEO */}
                     <div className={styles.pricingCard}>
-                        <div className={styles.tierName}>Enterprise</div>
+                        <div className={styles.tierName}>Growth & SEO</div>
                         <div className={styles.tierPrice}>
-                            <span className={styles.currency}>$</span>
-                            <span className={styles.amount}>25,000</span>
+                            <span className={styles.currency}>₹</span>
+                            <span className={styles.amount}>30,000</span>
                             <span className={styles.period}>/month</span>
                         </div>
                         <p className={styles.tierDescription}>
-                            For Series A+ companies scaling to market dominance.
+                            Complete solution for ambitious startups
                         </p>
                         <ul className={styles.featuresList}>
-                            <li>✓ Everything in Growth</li>
-                            <li>✓ Embedded BD Team</li>
-                            <li>✓ Partnership Development</li>
-                            <li>✓ Revenue Operations Audit</li>
-                            <li>✓ Custom Integrations</li>
-                            <li>✓ Priority Support</li>
+                            <li>✓ WhatsApp Business Automation</li>
+                            <li>✓ Facebook Automation</li>
+                            <li>✓ Instagram Automation</li>
+                            <li>✓ Google My Business Automation</li>
+                            <li>✓ Landing Pages</li>
+                            <li>✓ Website Chatbot Integration</li>
                         </ul>
                         <Link href="/ready-to-grow" className={styles.tierBtn}>
                             Contact Sales
@@ -101,28 +103,28 @@ export default function LaunchPack() {
                 <h2 className={styles.includedTitle}>What's included in every package</h2>
                 <div className={styles.includedGrid}>
                     <div className={styles.includedItem}>
-                        <div className={styles.includedIcon}>📊</div>
+                        <div className={styles.includedIcon}><BarChart3 size={48} strokeWidth={1.5} /></div>
                         <h3 className={styles.includedItemTitle}>Data-Driven Insights</h3>
                         <p className={styles.includedItemText}>
                             Monthly performance reports with actionable recommendations.
                         </p>
                     </div>
                     <div className={styles.includedItem}>
-                        <div className={styles.includedIcon}>🎯</div>
+                        <div className={styles.includedIcon}><Target size={48} strokeWidth={1.5} /></div>
                         <h3 className={styles.includedItemTitle}>Custom Playbooks</h3>
                         <p className={styles.includedItemText}>
                             Tailored strategies based on your industry and target market.
                         </p>
                     </div>
                     <div className={styles.includedItem}>
-                        <div className={styles.includedIcon}>🚀</div>
+                        <div className={styles.includedIcon}><Rocket size={48} strokeWidth={1.5} /></div>
                         <h3 className={styles.includedItemTitle}>Rapid Execution</h3>
                         <p className={styles.includedItemText}>
                             See results within 30-60 days, not 6-12 months.
                         </p>
                     </div>
                     <div className={styles.includedItem}>
-                        <div className={styles.includedIcon}>🤝</div>
+                        <div className={styles.includedIcon}><Handshake size={48} strokeWidth={1.5} /></div>
                         <h3 className={styles.includedItemTitle}>Knowledge Transfer</h3>
                         <p className={styles.includedItemText}>
                             We train your team to run systems independently.

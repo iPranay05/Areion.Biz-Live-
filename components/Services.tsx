@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './Services.module.css'
+import { Lightbulb, Code, Bot, PenTool, TrendingUp, Smartphone, ShoppingBag } from 'lucide-react'
 
 export default function Services() {
   return (
@@ -26,7 +27,7 @@ export default function Services() {
           {/* Service 1 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>💡</span>
+              <Lightbulb size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>Startup Consultancy</h3>
             <p className={styles.serviceDescription}>
@@ -40,7 +41,7 @@ export default function Services() {
           {/* Service 2 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>💻</span>
+              <Code size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>Web & Software Dev</h3>
             <p className={styles.serviceDescription}>
@@ -54,7 +55,7 @@ export default function Services() {
           {/* Service 3 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>🤖</span>
+              <Bot size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>AI Automation</h3>
             <p className={styles.serviceDescription}>
@@ -68,7 +69,7 @@ export default function Services() {
           {/* Service 4 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>✍️</span>
+              <PenTool size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>Content Creation</h3>
             <p className={styles.serviceDescription}>
@@ -82,7 +83,7 @@ export default function Services() {
           {/* Service 5 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>📈</span>
+              <TrendingUp size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>Marketing & Growth</h3>
             <p className={styles.serviceDescription}>
@@ -96,7 +97,7 @@ export default function Services() {
           {/* Service 6 */}
           <div className={styles.serviceCard}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>📱</span>
+              <Smartphone size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>Social Media Mgmt</h3>
             <p className={styles.serviceDescription}>
@@ -110,7 +111,7 @@ export default function Services() {
           {/* Featured Service - E-commerce */}
           <div className={`${styles.serviceCard} ${styles.featuredCard}`}>
             <div className={styles.iconBox}>
-              <span className={styles.icon}>🛍️</span>
+              <ShoppingBag size={32} strokeWidth={2} />
             </div>
             <h3 className={styles.serviceTitle}>E-commerce Support</h3>
             <p className={styles.serviceDescription}>

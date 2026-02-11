@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './WhoThisIsFor.module.css'
+import { Sunrise, Sparkles, Building2 } from 'lucide-react'
 
 export default function WhoThisIsFor() {
   return (
@@ -24,7 +25,7 @@ export default function WhoThisIsFor() {
         <div className={styles.audienceGrid}>
           {/* Card 1 */}
           <div className={styles.audienceCard}>
-            <div className={styles.cardIcon}>🌅</div>
+            <div className={styles.cardIcon}><Sunrise size={48} strokeWidth={1.5} /></div>
             <h3 className={styles.cardTitle}>Early-Stage Founders</h3>
             <p className={styles.cardDescription}>
               You have a validated MVP and initial traction, but need a structured GTM strategy to secure your Series A. We build the engine that drives your first major growth spurt.
@@ -38,7 +39,7 @@ export default function WhoThisIsFor() {
           {/* Card 2 - Featured */}
           <div className={`${styles.audienceCard} ${styles.featuredCard}`}>
             <div className={styles.featuredBadge}>MOST COMMON PARTNER</div>
-            <div className={styles.cardIcon}>✨</div>
+            <div className={styles.cardIcon}><Sparkles size={48} strokeWidth={1.5} /></div>
             <h3 className={styles.cardTitle}>High-Growth Scale-Ups</h3>
             <p className={styles.cardDescription}>
               You're growing fast but operations are breaking. You need to professionalize your BD efforts, expand into new markets, and optimize your revenue operations without slowing down.
@@ -52,7 +53,7 @@ export default function WhoThisIsFor() {
 
           {/* Card 3 */}
           <div className={styles.audienceCard}>
-            <div className={styles.cardIcon}>🏢</div>
+            <div className={styles.cardIcon}><Building2 size={48} strokeWidth={1.5} /></div>
             <h3 className={styles.cardTitle}>Innovation Units</h3>
             <p className={styles.cardDescription}>
               Internal ventures within larger organizations that need to move with the agility of a startup. We help you bypass corporate inertia to launch and validate new products quickly.

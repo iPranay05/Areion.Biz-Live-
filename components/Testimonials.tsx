@@ -2,8 +2,19 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './Testimonials.module.css'
+import { User, Star } from 'lucide-react'
 
 export default function Testimonials() {
+  const StarRating = () => (
+    <div className={styles.stars}>
+      <Star size={20} fill="currentColor" strokeWidth={0} />
+      <Star size={20} fill="currentColor" strokeWidth={0} />
+      <Star size={20} fill="currentColor" strokeWidth={0} />
+      <Star size={20} fill="currentColor" strokeWidth={0} />
+      <Star size={20} fill="currentColor" strokeWidth={0} />
+    </div>
+  );
+
   return (
     <div className={styles.page}>
       <Header />
@@ -24,90 +35,90 @@ export default function Testimonials() {
         <div className={styles.testimonialsGrid}>
           {/* Testimonial 1 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "Areion transformed our sales process from chaotic to systematic. Within 3 months, we saw a 140% increase in qualified leads and closed our Series A."
+              "Areion completely transformed our digital presence. Their social media strategy and content creation helped us increase our online engagement by 250% in just 3 months."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>Sarah Chen</div>
-                <div className={styles.authorTitle}>CEO, TechFlow AI</div>
+                <div className={styles.authorName}>Founder</div>
+                <div className={styles.authorTitle}>BlueRoof</div>
               </div>
             </div>
           </div>
 
           {/* Testimonial 2 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "The team at Areion didn't just consult—they executed. They built our entire outbound engine and trained our sales team to run it independently."
+              "The team at Areion didn't just deliver—they exceeded expectations. Their automation solutions streamlined our operations and saved us 15 hours per week."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>Marcus Rodriguez</div>
-                <div className={styles.authorTitle}>Founder, GrowthLabs</div>
+                <div className={styles.authorName}>CEO</div>
+                <div className={styles.authorTitle}>ZSS Technologies</div>
               </div>
             </div>
           </div>
 
           {/* Testimonial 3 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "Working with Areion was a game-changer. They helped us identify our true ICP and refine our messaging. Our conversion rates doubled in 6 weeks."
+              "Working with Areion was a game-changer for our startup. They helped us build a professional website and establish our brand identity from scratch."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>Emily Watson</div>
-                <div className={styles.authorTitle}>VP of Sales, DataSync</div>
+                <div className={styles.authorName}>Co-Founder</div>
+                <div className={styles.authorTitle}>ZCH Solutions</div>
               </div>
             </div>
           </div>
 
           {/* Testimonial 4 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "Areion's data-driven approach gave us clarity we never had before. They turned our gut feelings into actionable strategies backed by real metrics."
+              "Areion's content strategy and SEO optimization helped us rank on the first page of Google for our key services. Our organic traffic increased by 400%."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>David Park</div>
-                <div className={styles.authorTitle}>Co-Founder, CloudNest</div>
+                <div className={styles.authorName}>Owner</div>
+                <div className={styles.authorTitle}>360 Garage</div>
               </div>
             </div>
           </div>
 
           {/* Testimonial 5 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "The ROI was immediate. Areion helped us close 3 enterprise deals in our first quarter working together. Best investment we've made."
+              "The ROI was immediate. Areion's marketing campaigns generated 50+ qualified leads in our first month. Best investment we've made for our business."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>Jennifer Lee</div>
-                <div className={styles.authorTitle}>CEO, SecureStack</div>
+                <div className={styles.authorName}>Founder</div>
+                <div className={styles.authorTitle}>Clima Fredo</div>
               </div>
             </div>
           </div>
 
           {/* Testimonial 6 */}
           <div className={styles.testimonialCard}>
-            <div className={styles.stars}>★★★★★</div>
+            <StarRating />
             <p className={styles.quote}>
-              "Areion embedded into our team seamlessly. It felt like having a world-class BD team without the overhead. Highly recommend for any scaling startup."
+              "Areion's team became an extension of our company. Their expertise in digital marketing and brand development helped us scale from startup to established business."
             </p>
             <div className={styles.author}>
-              <div className={styles.avatar}>👤</div>
+              <div className={styles.avatar}><User size={32} strokeWidth={1.5} /></div>
               <div>
-                <div className={styles.authorName}>Alex Thompson</div>
-                <div className={styles.authorTitle}>Founder, Velocity SaaS</div>
+                <div className={styles.authorName}>CEO</div>
+                <div className={styles.authorTitle}>KoolHot</div>
               </div>
             </div>
           </div>

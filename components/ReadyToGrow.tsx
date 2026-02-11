@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './ReadyToGrow.module.css'
+import { TrendingUp, Users, DollarSign } from 'lucide-react'
 
 export default function ReadyToGrow() {
   return (
@@ -33,16 +34,16 @@ export default function ReadyToGrow() {
 
           <div className={styles.trustIndicators}>
             <div className={styles.indicator}>
-              <div className={styles.indicatorValue}>140%</div>
-              <div className={styles.indicatorLabel}>Avg. Revenue Growth</div>
+              <div className={styles.indicatorValue}><TrendingUp size={48} strokeWidth={2} /></div>
+              {/* <div className={styles.indicatorLabel}>140% Avg. Revenue Growth</div> */}
             </div>
             <div className={styles.indicator}>
-              <div className={styles.indicatorValue}>50+</div>
-              <div className={styles.indicatorLabel}>Startups Scaled</div>
+              <div className={styles.indicatorValue}><Users size={48} strokeWidth={2} /></div>
+              {/* <div className={styles.indicatorLabel}>50+ Startups Scaled</div> */}
             </div>
             <div className={styles.indicator}>
-              <div className={styles.indicatorValue}>$200M+</div>
-              <div className={styles.indicatorLabel}>Capital Raised</div>
+              <div className={styles.indicatorValue}><DollarSign size={48} strokeWidth={2} /></div>
+              {/* <div className={styles.indicatorLabel}>$200M+ Capital Raised</div> */}
             </div>
           </div>
         </div>
