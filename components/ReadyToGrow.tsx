@@ -1,10 +1,15 @@
+'use client'
+import { useState } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ContactModal from '@/components/ContactModal'
 import styles from './ReadyToGrow.module.css'
 import { TrendingUp, Users, DollarSign } from 'lucide-react'
 
 export default function ReadyToGrow() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div className={styles.page}>
       <Header />
@@ -24,9 +29,9 @@ export default function ReadyToGrow() {
           </p>
 
           <div className={styles.ctaButtons}>
-            <Link href="#" className={styles.primaryBtn}>
+            <button onClick={() => setIsModalOpen(true)} className={styles.primaryBtn}>
               Schedule Strategy Call →
-            </Link>
+            </button>
             <Link href="/services" className={styles.secondaryBtn}>
               Explore Our Services
             </Link>
@@ -115,6 +120,7 @@ export default function ReadyToGrow() {
         </div>
       </section>
 
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Footer />
     </div>
   )

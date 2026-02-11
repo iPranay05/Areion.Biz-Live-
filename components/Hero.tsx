@@ -1,11 +1,16 @@
+'use client'
+import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import ContactModal from '@/components/ContactModal'
 import styles from './Hero.module.css'
 import { TrendingUp, Briefcase, Target, Rocket, Zap, BarChart3, RefreshCw, Star, Lightbulb, Play } from 'lucide-react'
 
 export default function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   return (
     <div className={styles.page}>
       <Header />
@@ -14,7 +19,7 @@ export default function Hero() {
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <div className={styles.heroLeft}>
-           
+
 
             <h1 className={styles.heroTitle}>
               Scale your<br />
@@ -41,28 +46,28 @@ export default function Hero() {
               <span className={styles.trustedLabel}>TRUSTED BY:</span>
               <div className={styles.logoPlaceholders}>
                 <div className={styles.logoPlaceholder}>
-                  <Image 
-                    src="/360logo.png" 
-                    alt="360 Logo" 
-                    width={60} 
+                  <Image
+                    src="/360logo.png"
+                    alt="360 Logo"
+                    width={60}
                     height={30}
                     className={styles.clientLogo}
                   />
                 </div>
                 <div className={styles.logoPlaceholder}>
-                  <Image 
-                    src="/zchlogo.png" 
-                    alt="ZCH Logo" 
-                    width={60} 
+                  <Image
+                    src="/zchlogo.png"
+                    alt="ZCH Logo"
+                    width={60}
                     height={30}
                     className={styles.clientLogo}
                   />
                 </div>
                 <div className={styles.logoPlaceholder}>
-                  <Image 
-                    src="/ZSSLOGO.png" 
-                    alt="ZSS Logo" 
-                    width={60} 
+                  <Image
+                    src="/ZSSLOGO.png"
+                    alt="ZSS Logo"
+                    width={60}
                     height={30}
                     className={styles.clientLogo}
                   />
@@ -275,11 +280,12 @@ export default function Hero() {
         <p className={styles.finalCtaText}>
           Book a free 30-minute strategy call. We'll audit your growth bottlenecks and show you exactly how Areion can accelerate your path to market dominance.
         </p>
-        <Link href="/ready-to-grow" className={styles.finalCtaBtn}>
+        <button onClick={() => setIsModalOpen(true)} className={styles.finalCtaBtn}>
           Schedule Your Strategy Call →
-        </Link>
+        </button>
       </section>
 
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       <Footer />
     </div>
   )
