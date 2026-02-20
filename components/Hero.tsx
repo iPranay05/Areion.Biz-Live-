@@ -211,6 +211,48 @@ export default function Hero() {
         </div>
       </section>
 
+      {/* Portfolio Preview Section */}
+      <section className={styles.portfolioPreviewSection}>
+        <div className={styles.sectionHeader}>
+          <h2 className={styles.sectionTitle}>Our Work Speaks</h2>
+          <p className={styles.sectionSubtitle}>
+            Real projects, real results. See how we've helped businesses transform their digital presence.
+          </p>
+        </div>
+        <div className={styles.portfolioGrid}>
+          <Link href="/portfolio" className={styles.portfolioCard}>
+            <div className={styles.portfolioImage}>
+              <Image src="/image.png" alt="Blueroof India" width={400} height={300} className={styles.portfolioImg} />
+            </div>
+            <div className={styles.portfolioContent}>
+              <h3 className={styles.portfolioTitle}>Blueroof India</h3>
+              <p className={styles.portfolioDesc}>Real Estate Platform</p>
+            </div>
+          </Link>
+          <Link href="/portfolio" className={styles.portfolioCard}>
+            <div className={styles.portfolioImage}>
+              <Image src="/adani.png" alt="Adani Realty" width={400} height={300} className={styles.portfolioImg} />
+            </div>
+            <div className={styles.portfolioContent}>
+              <h3 className={styles.portfolioTitle}>Adani Realty</h3>
+              <p className={styles.portfolioDesc}>Premium Real Estate</p>
+            </div>
+          </Link>
+          <Link href="/portfolio" className={styles.portfolioCard}>
+            <div className={styles.portfolioImage}>
+              <Image src="/ZSSLOGO.png" alt="Zon Secure Services" width={400} height={300} className={styles.portfolioImg} />
+            </div>
+            <div className={styles.portfolioContent}>
+              <h3 className={styles.portfolioTitle}>Zon Secure Services</h3>
+              <p className={styles.portfolioDesc}>Security Services</p>
+            </div>
+          </Link>
+        </div>
+        <Link href="/portfolio" className={styles.viewAllBtn}>
+          View All Projects →
+        </Link>
+      </section>
+
       {/* Social Proof Section */}
       <section className={styles.socialProofSection}>
         <div className={styles.socialProofGrid}>
