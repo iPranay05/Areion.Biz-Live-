@@ -32,6 +32,35 @@
   font-size: 0.875rem;
   color: #6b7280;
   line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  color: #6b7280;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.socialIcon:hover {
+  background: #a855f7;
+  color: white;
+  border-color: #a855f7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
 }
 
 .footerSection h4 {

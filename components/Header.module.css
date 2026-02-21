@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 4rem;
+  padding: 0.5rem 4rem;
   background: white;
   border-bottom: 1px solid #f3f4f6;
   position: relative;
@@ -17,6 +17,7 @@
 .logoImage {
   height: auto;
   object-fit: contain;
+  max-height: 70px;
 }
 
 .nav {
@@ -55,7 +56,7 @@
 .bookCall {
   background: #a855f7 !important;
   color: white !important;
-  padding: 0.75rem 1.75rem;
+  padding: 0.625rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 600;
   border: none;
@@ -130,7 +131,7 @@
 
 @media (max-width: 768px) {
   .header {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .logo {
@@ -138,8 +139,9 @@
   }
 
   .logoImage {
-    width: 100px !important;
-    height: 100px !important;
+    width: 90px !important;
+    height: 90px !important;
+    max-height: 55px;
   }
 
   .nav {

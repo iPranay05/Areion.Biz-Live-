@@ -25,8 +25,8 @@ export default function Header() {
         <Image
           src="/AreionRectangle.png"
           alt="Areion Logo"
-          width={140}
-          height={140}
+          width={120}
+          height={120}
           priority
           className={styles.logoImage}
         />

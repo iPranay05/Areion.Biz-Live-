@@ -1,7 +1,8 @@
 'use client'
-import { X, Phone, Mail, MapPin } from 'lucide-react'
+import { X, Phone, Mail, MapPin, CheckCircle } from 'lucide-react'
 import styles from './ContactModal.module.css'
-import { useState } from 'react'
+import { useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 interface ContactModalProps {
   isOpen: boolean
@@ -9,6 +10,9 @@ interface ContactModalProps {
 }
 
 export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
+  const formRef = useRef<HTMLFormElement>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccess, setShowSuccess] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,13 +22,34 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   if (!isOpen) return null
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    // TODO: Add actual form submission logic here
-    alert('Thank you for your message! We will get back to you soon.')
-    setFormData({ name: '', email: '', subject: '', message: '' })
-    onClose()
+    setIsSubmitting(true)
+
+    try {
+      // EmailJS configuration from environment variables
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      )
+
+      console.log('Email sent successfully:', result.text)
+      setShowSuccess(true)
+      setFormData({ name: '', email: '', subject: '', message: '' })
+      
+      // Auto close success message after 3 seconds
+      setTimeout(() => {
+        setShowSuccess(false)
+        onClose()
+      }, 3000)
+    } catch (error) {
+      console.error('Failed to send email:', error)
+      alert('Failed to send message. Please try again or contact us directly at areion.agency@gmail.com')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -47,7 +72,20 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
           <X size={24} />
         </button>
 
-        <div className={styles.modalContent}>
+        {showSuccess ? (
+          // Success Message
+          <div className={styles.successContainer}>
+            <div className={styles.successIcon}>
+              <CheckCircle size={64} strokeWidth={2} />
+            </div>
+            <h2 className={styles.successTitle}>Thank You!</h2>
+            <p className={styles.successMessage}>
+              Your message has been sent successfully. We'll get back to you soon!
+            </p>
+          </div>
+        ) : (
+          // Contact Form
+          <div className={styles.modalContent}>
           {/* Left Side - Contact Information */}
           <div className={styles.contactInfo}>
             <h2 className={styles.modalTitle}>
@@ -74,7 +112,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </div>
                 <div>
                   <div className={styles.contactLabel}>Email</div>
-                  <div className={styles.contactValue}>business@areion.biz</div>
+                  <div className={styles.contactValue}>areion.agency@gmail.com</div>
                 </div>
               </div>
 
@@ -84,7 +122,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 </div>
                 <div>
                   <div className={styles.contactLabel}>Address</div>
-                  <div className={styles.contactValue}>Mumbai, India</div>
+                  <div className={styles.contactValue}>Thane, India</div>
                 </div>
               </div>
             </div>
@@ -92,7 +130,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
           {/* Right Side - Contact Form */}
           <div className={styles.formContainer}>
-            <form onSubmit={handleSubmit} className={styles.contactForm}>
+            <form ref={formRef} onSubmit={handleSubmit} className={styles.contactForm}>
               <input
                 type="text"
                 name="name"
@@ -133,12 +171,13 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 required
               />
 
-              <button type="submit" className={styles.submitButton}>
-                Send Message
+              <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
         </div>
+        )}
       </div>
     </div>
   )

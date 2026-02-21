@@ -1,8 +1,8 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import styles from './FoundersStory.module.css'
-import { User } from 'lucide-react'
 
 export default function FoundersStory() {
   return (
@@ -23,7 +23,14 @@ export default function FoundersStory() {
           </div>
           <div className={styles.heroRight}>
             <div className={styles.founderImage}>
-              <div className={styles.imagePlaceholder}><User size={64} strokeWidth={1.5} /></div>
+              <Image 
+                src="/founder.jpg" 
+                alt="Founder Portrait" 
+                width={600} 
+                height={600}
+                className={styles.founderPhoto}
+                priority
+              />
             </div>
           </div>
         </div>

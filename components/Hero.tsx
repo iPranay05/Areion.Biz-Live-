@@ -276,7 +276,7 @@ export default function Hero() {
             <p className={styles.proofText}>
               Built by founders who've been in the trenches. We know the brutal reality of scaling a startup because we've lived it.
             </p>
-            <Link href="/founder-story" className={styles.proofLink}>
+            <Link href="/founders-story" className={styles.proofLink}>
               Read Our Story →
             </Link>
           </div>
@@ -309,7 +309,7 @@ export default function Hero() {
             <p className={styles.tierDesc}>Complete solution for ambitious startups</p>
           </div>
         </div>
-        <Link href="/launch-pack" className={styles.pricingBtn}>
+        <Link href="/startup-launch-pack" className={styles.pricingBtn}>
           View Full Pricing & Packages →
         </Link>
       </section>

@@ -3,6 +3,8 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import styles from './Portfolio.module.css';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -128,8 +130,10 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section className={styles.portfolio}>
-      <div className={styles.container}>
+    <>
+      <Header />
+      <section className={styles.portfolio}>
+        <div className={styles.container}>
         <div className={styles.header}>
           <h1 className={styles.title}>Our Portfolio</h1>
           <p className={styles.subtitle}>
@@ -185,5 +189,7 @@ export default function Portfolio() {
         </div>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
